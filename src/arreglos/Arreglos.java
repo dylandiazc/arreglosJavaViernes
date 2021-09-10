@@ -5,6 +5,7 @@
  */
 package arreglos;
 
+import java.util.Scanner;
 import paquete2.Heroe;
 
 /**
@@ -17,8 +18,24 @@ public class Arreglos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //como se utiliza una clase
         
+        Scanner entrada = new Scanner(System.in);
+        int [] numeros=new int[5];
+        
+        
+         for(int  i=0;i<numeros.length;i++){
+            
+             System.out.println("digite un número:");
+             numeros[i]=entrada.nextInt();
+        }
+        
+        for(int  i=0;i<numeros.length;i++){
+            
+            System.out.println(numeros[i]);
+            
+        }
+
+        //como se utiliza una clase
         //creando objeto
         
         //que es un objeto? una variable
@@ -30,11 +47,11 @@ public class Arreglos {
         heroe.nombre="LUCHO DÍAZ";
         
         //aaceidendo a un atributo privado
-        heroe.setEdad(-5);
+       // heroe.setEdad(-5);
         
         //imprimo valores de los aributos
-        System.out.println(heroe.nombre);
-        System.out.println(heroe.getEdad());
+        /*System.out.println(heroe.nombre);
+        System.out.println(heroe.getEdad());*/
         
     }
     
